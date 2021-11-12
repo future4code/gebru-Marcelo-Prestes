@@ -1,0 +1,95 @@
+/ let resultado = bool1 && bool2
+// console.log("a. ", resultado) //Resultado false
+
+// resultado = bool1 && bool2 && bool3 
+// console.log("b. ", resultado) //Resultado false
+
+// resultado = !resultado && (bool1 || bool2) 
+// console.log("c. ", resultado) //Resultado true
+
+// console.log("d. ", typeof resultado) //Resultado boolean
+
+
+
+// /////////////////////
+// let primeiroNumero = parseInt( prompt("Digite um numero!"))
+// let segundoNumero = parseInt (prompt("Digite outro numero!"))
+
+// const soma = primeiroNumero + segundoNumero
+
+// console.log(soma)
+
+// //Sugiro que ele adicione antes do Prompt, o parseInt, convertendo a string para inteiro/numerico, uma vez que  tudo que o prompt imprime e string
+
+
+// /*  */
+/////////////////////
+
+
+// let usuarioIdade = parseInt(prompt("Informe sua Idade? ")) ;
+// let IdadeBestFriend = parseInt(prompt("Informe idade do seu melhor amigo? ")) ;;
+// let comparaIdade = usuarioIdade > IdadeBestFriend;
+// console.log("Sua idade e maior que seu melhor amigo" , comparaIdade);
+
+
+// let diferenca = usuarioIdade - IdadeBestFriend;
+
+// console.log("A diferença de idade e de " , diferenca,"anos")
+
+
+////////////////////////////
+// let numPar = parseInt(prompt("Informe um número par"))
+//  let divResto = numPar % 2
+//  console.log("Resto divisão ", divResto)
+
+
+ //Quando colocado numeros pares, o resto da divisão e sempre zero
+ //Ex: 36 % 2 = 0
+//Ex: 88 % 2 = 0
+
+
+ //Qaundo colocado numeros ímpares, o resto da divisão pode ser 1 ou 3
+ // Ex: 75 % 4 = 3
+ // Ex: 19 % 4 = 1
+
+
+// let idadeUse = parseInt(prompt("Informe sua idade"))
+// let IdadeDias = idadeUse * 365;
+// let idadeSemana = idadeUse * 48;
+// let idadeHoras = idadeUse * 24;
+
+// console.log("Sua idade é ", idadeUse,"anos, em dias seria " , IdadeDias, "dias, em semanas seria ",idadeSemana, "semanas e em horas ficaria" , idadeHoras , "hs" )
+
+
+
+
+
+ //A idade do usuário em meses, dias e horas
+
+
+ let num1 = parseInt(prompt("Informe o primeiro número"))
+ let num2 = parseInt(prompt("Informe o segundo número"))
+ 
+
+ 
+
+ if (num1 % num2 == 0 || 2 ){
+    console.log( "true");
+  }else {
+  
+      console.log("false");
+  }
+  
+  if (num2 % num1 == 1){
+      console.log("true")
+    }else {
+    
+        console.log("false")
+    }
+    
+ console.log(num1 > num2)
+ console.log(num1 === num2) 
+
+
+
+  
