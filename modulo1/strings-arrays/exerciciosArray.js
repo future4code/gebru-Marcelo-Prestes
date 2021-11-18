@@ -1,5 +1,5 @@
 
-1 - Indique todas as mensagens impressas no console, SEM EXECUTAR o programa
+//1 - Indique todas as mensagens impressas no console, SEM EXECUTAR o programa
 
 let array
 console.log('a. ', array)
@@ -23,7 +23,7 @@ const valor = array[i+6]
 console.log('f. ', valor)
 //f.  9
 
-2 . Leia o código abaixo com atenção
+//2 . Leia o código abaixo com atenção
 const frase = prompt("Digite uma frase")
 
 console.log(frase.toUpperCase().replaceAll("A", "I"), frase.length)
