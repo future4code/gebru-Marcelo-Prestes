@@ -26,7 +26,7 @@ for (let numero of lista) {
 
 const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
 let quantidadeAtual = 0
-
+9
 while(quantidadeAtual < quantidadeTotal){
   let linha = ""
   for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
