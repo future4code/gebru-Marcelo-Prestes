@@ -1,3 +1,4 @@
+		
 //const respostaDoUsuario = prompt("Digite o número que você quer testar")
 //const numero = Number(respostaDoUsuario)
 /*
@@ -49,7 +50,7 @@ c) Considere que um usuário queira comprar uma `Pêra`, qual seria a mensagem i
 */
 
 
-
+/* 
 const numero = Number(prompt("Digite o primeiro número."))
 
 if(numero > 0) {
@@ -58,7 +59,7 @@ if(numero > 0) {
 }
 
 console.log(mensagem)
-
+ */
 
 //a) O que a primeira linha está fazendo?
 // Solicitando um numero para o usuario, já convertido com o Number, assim de fato receber um numeral, comparando se ele é maior que 0
@@ -71,19 +72,19 @@ console.log(mensagem)
 
 
 //let idade = Number(prompt("Informe sua idade "));
-function habilitacao(idade){
+/* function habilitacao(idade){
     if(idade>=18){
         console.log("Você pode dirigir")
     }else{
         console.log("Você não pode dirigir")
     }
-}
+} */
 
 //habilitacao(idade)
 
 
 //let turno = prompt("Informe qual turno você estuda, digite M - matutino ou V - Vespertino ou N - Noturno. ")
-function turnoEstudo(turno){
+/* function turnoEstudo(turno){
     if(turno == "M"){
         console.log("Bom Dia!")
     }
@@ -98,7 +99,7 @@ function turnoEstudo(turno){
     else{
         console.log("Nenhuma alternativa")
     }
-} 
+}  */
 //turnoEstudo(turno)
 
 
@@ -121,7 +122,7 @@ switch (turno) {
 
 }*/
 
-/*
+
 const InformeGenero = prompt("Informe o gênero do filme que você e seu amigo(a), gostaria de assistir? ")
 const valorIngresso = Number( prompt("Voçê poderia informar o valor do ingresso? "))
 function GeneroFilme (InformeGenero,valorIngresso){
@@ -132,4 +133,5 @@ function GeneroFilme (InformeGenero,valorIngresso){
        } else {
         console.log("Agradeço mas vamos fazer outro programa, boa noite!")
        }
-    }   GeneroFilme (InformeGenero,valorIngresso)*/
+    }  
+    GeneroFilme (InformeGenero,valorIngresso)
