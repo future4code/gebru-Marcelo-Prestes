@@ -5,6 +5,10 @@
 
 }
 
+html{
+    font-size: 20px;
+}
+
 header{
     height: 60px;
     background-color: slategrey;
@@ -19,9 +23,12 @@ header{
 background-color: aqua;
 border: 2px solid;
 padding: 20px;
+
 }
 
 .container-box{
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(4, 1fr);
@@ -32,7 +39,8 @@ padding: 20px;
 }
 
 video{
-  width: 300px;
+max-width: 300px;
+min-width: 250px;
 height: 200px;
 }
 
@@ -44,4 +52,28 @@ align-items: center;
 background-color: slategrey;
 display: flex;
 grid-column: 1/-1;
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    h1, h3, a {
+        font-size: 1.2rem;
+    }
+
+    .container-box{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        margin-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    .class-box{
+        margin: 0;
+        width: auto;
+    }
+    video{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
