@@ -7,6 +7,7 @@ function App() {
 
 function reproduzVideo(){
   alert("O vídeo está sendo reproduzido")
+
 }
   return (
     <div class="tela-inteira">
@@ -27,7 +28,7 @@ function reproduzVideo(){
         </nav>
 
         <section className="painel-de-videos">
-            <div className="box-pagina-principal media1" onClick={reproduzVideo}>
+            <div className="box-pagina-principal media1"  onClick={reproduzVideo}>
                 <img src="https://picsum.photos/400/400?a=1 " alt=""/>
                 <h4>{titulo}</h4>
             </div>
