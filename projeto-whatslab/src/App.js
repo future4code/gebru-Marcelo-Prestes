@@ -1,37 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style.css';
 
 
 // eslint-disable-next-line no-undef
-class App extends React.Component {
+export default class App extends React.Component {
   
 state = {
   inputRemetent: "",
   inputMenssage: "",
-}
+};
 
-onChangeInputRemetent = (e) => {
-console.log(e.target.value)
-}
+onChangeRemetent = (e) => {
+this.setState({inputRemetent: e.target.value});
 
-onChangeInputMenssage = (e) => {
-  console.log(e.target.value)
-}
+};
+
+// eslint-disable-next-line no-dupe-class-members
+onChangeMenssage = (e) => {
+  this.setState({inputMenssage: e.target.value});
+  
 
 
+  this.setState({
+    inputRemetent: "",
+    inputMenssage: "",
+    
+  });};
+
+
+  
   render() {
   return (
-<div className="App">
-    <input placeholder="Remetente" value={this.state.inputRemetent}/>
+    <div className="App">
+    <p>{this.state.inputRemetent}</p>
+    <input placeholder="Remetente" 
+    value={this.state.inputRemetent}
+    onChange={this.onChangeRemetent}/>
     
+
+    <p>{this.state.inputMenssage}</p>
+    <input placeholder="Mensagem" 
+    value={this.state.inputMenssage} 
+    onChange={this.onChangeMenssage}/>
     
-    <input placeholder="Mensagem" value={this.state.inputMenssage}/>
-   onChange={this.onChangeInputMenssage} 
     </div>
   );
 
-}  
-    
+} 
 }
-
-export default App;
