@@ -76,8 +76,29 @@ export default class App extends React.Component {
     this.setState({ inputEmail: event.target.value });
   };
 
+
+
+  deleteUser = async (userId) => {
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const res = await axios.delete(
+        `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${userId}`,
+        {
+          headers: {
+            Authorization: 'marcelo-prestes-gebru'
+          }
+        }
+      )
+
+      alert('Usuárie deletade com sucesso!')
+      this.getAllUsers()
+    } catch (err) {
+      console.log(err.response)
+    }
+  }
+
   render() {
-  const   usersComponents = this.state.i this.state.users.map((novoUser) => {
+  const   usersComponents = this.state.inputEmail && this.state.users.map((novoUser) => {
   return <li key={novoUser.id}> {novoUser.name} </li>; 
     })
     console.log(this.state.users)
@@ -85,9 +106,7 @@ export default class App extends React.Component {
       <div>
         <h1>Usuarios </h1>
         <input
-          // Criamos o valor do input como a alteração que foi escrita pelo usuário.
-
-          // Utilizamos o OnChange para quando escrevermos no input, mudar o texto e podemos enviar as informações
+   
 
           value={this.state.inputName}
           placeholder="Nome usúario"
@@ -98,10 +117,8 @@ export default class App extends React.Component {
           placeholder="Email"
           onChange={this.onEmailTextChange}
         />
-        {/* Quando clicarmos no botão,precisamos chamar a função que cria uma nova playlist. Para isso usamos o this.createPlaylist */}
 
         <button onClick={this.createUser}>Eviar</button>
-        {/* Chamamos o nosso map, em que passamos playlist por playlist */}
 
         {usersComponents}
       </div>
