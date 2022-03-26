@@ -22,8 +22,8 @@ export default function App () {
   }, []);
 
   // eslint-disable-next-line no-unused-vars
-  const changePokeName = (event) => {
-    setPokeName(event.target.value)
+  function changePokeName(event) {
+    setPokeName(event.target.value);
   }
   return (
     <div className="App">
