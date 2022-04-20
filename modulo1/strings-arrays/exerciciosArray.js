@@ -63,6 +63,18 @@ comidasFavoritas [1] = comidaUsuario;
 
 console.log(comidasFavoritas)
 
+
+const comidasPref = ["Frago", "arroz", "ovo", "feijão","guizado" ]
+console.log(comidasPref)
+console.log("Esse eo almoço de hoje,ls " + comidasPref[1], comidasPref[2], )
+//const novaComida = prompt("Informe uma nova comida")
+/*comidasPref[1] =novaComida
+console.log(comidasPref)*/
+
+
+
+
+
 let tarefa1 = prompt("Informe primeira tarefa ")
 let tarefa2 = prompt("Informe segunda tarefa ")
 let tarefa3 = prompt("Informe terceira tarefa ")
@@ -87,7 +99,17 @@ listaDeTarefas.splice(3,retirarTarefa)
 
 console.log(listaDeTarefas)
 
+//Desafio
 
+//1 
+const fraseRevisao = "Revisando o javaScript, pronto pro Back"
+const fraseArray = fraseRevisao.split(" ")
+console.log(fraseArray)
+
+
+
+
+//2
 const frutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]
 
 console.log(`Indice do elemento Abacaxi é ${frutas.indexOf("Abacaxi")}, a lista fruatas têm o tamanho ${frutas.length}`)
