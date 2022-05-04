@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
-import CharacterListPage from './pages/CharacterDetailPage/CharacterDetailPage.js';
-import CharacterDetailPage from './pages/CharacterDetailPage/CharacterDetailPage.js';
+import CharacterListPage from './pages/CharacterListPage/CharacterListPage'
+import CharacterDetailPage from './pages/CharacterDetailPage/CharacterDetailPage';
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState("List")
 
-  const selectPage = () =>{
+  function selectPage () {
     if(currentPage === "List"){
       return <CharacterListPage/>
      } else {
