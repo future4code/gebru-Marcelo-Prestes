@@ -1,0 +1,18 @@
+POST http://localhost:3003/users 
+Content-Type: application/json
+
+{
+    "name": "Jorge",
+    "email": "jorge@email.com",
+    "type": "fdkasnfjwfg",
+    "age": 40
+}
+
+### 
+
+GET http://localhost:3003/users/2
+
+### 
+
+GET http://localhost:3003/users?name=bob
+
