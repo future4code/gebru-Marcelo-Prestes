@@ -11,6 +11,7 @@ export type Client = {
     email: string, 
     type: ACCOUNT_TYPE,
     age: number
+    transacoes: (name: string[])=> Client
 }
 
 
@@ -23,6 +24,7 @@ export let clients :Client[] = [
         email: "alice@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 12,
+        transacoes: (name: string[])=> Client
     },
     {
         id: 2,
@@ -31,6 +33,7 @@ export let clients :Client[] = [
         email: "bob@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 36,
+        transacoes: (name: string[])=> Client
     },
     {
         id: 3,
