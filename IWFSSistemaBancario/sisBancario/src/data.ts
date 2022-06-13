@@ -1,6 +1,7 @@
 export enum ACCOUNT_TYPE{
     JURIDICA = "JURIDICA",
-    FISICA = "FISICA"
+    FISICA = "FISICA",
+    ID_CONTA = "NUMERO"
 }
 
 export type Client = {
@@ -18,7 +19,7 @@ export let clients :Client[] = [
     {
         id: 1,
         name: "Alice",
-        cpf:,
+        cpf: 11122233344,
         email: "alice@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 12,
@@ -26,7 +27,7 @@ export let clients :Client[] = [
     {
         id: 2,
         name: "Bob",
-        cpf:,
+        cpf:11122233355,
         email: "bob@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 36,
@@ -34,7 +35,7 @@ export let clients :Client[] = [
     {
         id: 3,
         name: "Roberto",
-        cpf:,
+        cpf:11122233366,
         email: "roberto@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 21,
@@ -42,7 +43,7 @@ export let clients :Client[] = [
     {
         id: 4,
         name: "Ronaldo",
-        cpf:,
+        cpf:11122233377,
         email: "ronaldo@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 17,
@@ -50,7 +51,7 @@ export let clients :Client[] = [
     {
         id: 5,
         name: "Marta",
-        cpf:,
+        cpf:11122233388,
         email: "marta@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 17,
@@ -58,10 +59,21 @@ export let clients :Client[] = [
     {
         id: 6,
         name: "Fred",
-        cpf:,
+        cpf:11122233399,
         email: "fred@email.com",
         type: ACCOUNT_TYPE.FISICA,
         age: 60,
     },
 ]
 
+
+
+
+
+export type transaction = {
+   deposito: number,
+   saque: number,
+   extrato: number,
+   pagamento: number,
+
+}
